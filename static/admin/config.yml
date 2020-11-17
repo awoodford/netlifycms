@@ -6,6 +6,20 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+    - label: 'Pages'
+      name: 'pages'
+      files:
+          - label: 'Home Page'
+            name: 'home'
+            file: 'site/content/home.yml'
+            fields:
+                - {
+                      - label: 'Hero Slides',
+                      name: 'slides',
+                      widget: 'list',
+                      field: { label: Image, name: image, widget: image },
+                  }
+
     - name: 'blog'
       label: 'Blog'
       folder: 'content/blog'
